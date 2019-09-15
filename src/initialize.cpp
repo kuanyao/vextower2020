@@ -146,15 +146,6 @@ void initialize()
 	lv_obj_set_size(skillsBtn, 450, 50);
 	lv_obj_set_pos(skillsBtn, 0, 100);
 	lv_obj_align(skillsBtn, NULL, LV_ALIGN_CENTER, 0, 0);
-
-	// flywheel motor group setup
-	flywheelController.setGearing(okapi::AbstractMotor::gearset::blue);
-	flywheelController.setBrakeMode(okapi::AbstractMotor::brakeMode::coast);
-
-	okapi::ADIGyro gyro(1, 1); // port, multiplier
-	  pros::Vision vision_sensor (11);
-  vision_sensor.clear_led();
-
 }
 
 /**

@@ -2,19 +2,6 @@
 #include "okapi/api.hpp"
 #include "korvexlib.h"
 
-okapi::MotorGroup flywheelController({-FLY_MTR1, -FLY_MTR2});
-pros::Motor intakeMotor(INTAKE_MTR, pros::E_MOTOR_GEARSET_18, false);
-pros::Motor capflipMotor(CAPFLIP_MTR, pros::E_MOTOR_GEARSET_18, false);
-
-// intake triggers
-pros::ADIDigitalIn triggerBL(TRIGGER_BL);
-pros::ADIDigitalIn triggerBR(TRIGGER_BR);
-pros::ADIDigitalIn triggerTL(TRIGGER_TL);
-pros::ADIDigitalIn triggerTR(TRIGGER_TR);
-
-pros::ADIAnalogIn trackerHigh(TRACK_HIGH);
-pros::ADIAnalogIn trackerLow(TRACK_LOW);
-
 // other
 pros::Controller controllerPros(pros::E_CONTROLLER_MASTER);
 
