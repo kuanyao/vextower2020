@@ -2,6 +2,8 @@
 #include "okapi/api.hpp"
 #include "korvexlib.h"
 
+pros::Motor testingMotor(TESTING_MTR, pros::E_MOTOR_GEARSET_18, false);
+
 // other
 pros::Controller controllerPros(pros::E_CONTROLLER_MASTER);
 

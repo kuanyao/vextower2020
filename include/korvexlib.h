@@ -5,10 +5,12 @@
 // ports for motors
 
 // chassis motors
-const int LEFT_MTR1 = 5;
+const int LEFT_MTR1 = 1;
 const int LEFT_MTR2 = 2;
 const int RIGHT_MTR1 = 3;
 const int RIGHT_MTR2 = 4;
+
+const int TESTING_MTR = 5;
 
 // lift and claw motor declerations
 const int LIFT_MTR = 7;
@@ -44,10 +46,8 @@ extern pros::Motor chassisLeft1;
 extern pros::Motor chassisLeft2;
 extern pros::Motor chassisRight1;
 extern pros::Motor chassisRight2;
-extern pros::Motor liftMotor;
-extern okapi::MotorGroup flywheelController;
-extern pros::Motor capflipMotor;
-extern pros::Motor intakeMotor;
+
+extern pros::Motor testingMotor;
 
 // other declerations
 extern pros::Controller controllerPros;

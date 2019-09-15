@@ -23,19 +23,10 @@ void opcontrol()
 
 	while (true)
 	{
-		// capflip control
-		if (controllerPros.get_digital_new_press(DIGITAL_RIGHT)) // new cycle press, go to next preset
+		// testing motors spin
+		if (controllerPros.get_digital(DIGITAL_L2)) 
 		{
-			//capflipMotor.move_absolute(capflipTarget, 200);
-		}
-		else if (controllerPros.get_digital_new_press(DIGITAL_Y)) // reset capflip
-		{
-			//capflipMotor.move_absolute(0, 200);
-		}
-
-		if (controllerPros.get_digital(DIGITAL_L2)) // reverse intake
-		{
-			//intakeMotor.move_velocity(-200);
+			testingMotor.move_velocity(200);
 		}
 
 		// debug
